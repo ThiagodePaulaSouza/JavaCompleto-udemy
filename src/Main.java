@@ -4,17 +4,22 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+
 		Locale.setDefault(Locale.US);
-		
 		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		int hrsTrab = sc.nextInt();
-		double qtdRecebePorHora = sc.nextDouble();
+
+		int numero, horas;
+	    double valorHora, salario;
+
+	    numero = sc.nextInt();
+	    horas = sc.nextInt();
+	    valorHora = sc.nextDouble();
+
+	    salario = valorHora * horas;
+
+	    System.out.println("NUMBER = " + numero);
+	    System.out.printf("SALARY = U$ %.2f%n", salario);
+		
 		sc.close();
-		
-		double salario = hrsTrab * qtdRecebePorHora;
-		
-		System.out.println("Number = " + num);
-		System.out.printf("Salary = U$ %.2f%n", salario);
 	}
 }
