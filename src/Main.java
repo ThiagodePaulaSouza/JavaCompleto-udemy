@@ -4,19 +4,18 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Locale.setDefault(Locale.US);
-		double x = 0;
-		double raio = 0;
 		Scanner sc = new Scanner(System.in);
 		
-		x = sc.nextDouble();
-		
-		raio = Math.PI * Math.pow(x, 2);
-		System.out.printf("o raio e: %.4f%n", raio);
-		
-		
-		
-		
+		double R, A, pi = 3.14159;
+	    
+	    R = sc.nextDouble();
+
+	    A = pi * R * R;
+
+	    System.out.printf("A=%.4f%n", A);
+
 		sc.close();
 	}
 }
