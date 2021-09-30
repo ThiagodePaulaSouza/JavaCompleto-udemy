@@ -3,19 +3,18 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		int x = 0;
-		int y = 0;
+		
 		Scanner sc = new Scanner(System.in);
-		
-		System.out.println("digite dois numeros: ");
-		x = sc.nextInt();
-		y = sc.nextInt();
+
+		int A, B, soma;
+
+		A = sc.nextInt();
+		B = sc.nextInt();
+
+		soma = A + B;
+
+		System.out.println("SOMA = " + soma);
+
 		sc.close();
-		
-		System.out.println("a soma e: " + soma(x,y));
-	}
-	
-	public static int soma(int x, int y) {
-		return x+y;
 	}
 }
