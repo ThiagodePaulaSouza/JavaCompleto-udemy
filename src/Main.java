@@ -8,18 +8,16 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int numero, horas;
-	    double valorHora, salario;
+		int codPeca1 = sc.nextInt();
+		int numPecas1 = sc.nextInt();
+		double vlrPorPecas1 = sc.nextDouble();
 
-	    numero = sc.nextInt();
-	    horas = sc.nextInt();
-	    valorHora = sc.nextDouble();
+		int codPeca2 = sc.nextInt();
+		int numPecas2 = sc.nextInt();
+		double vlrPorPecas2 = sc.nextDouble();
 
-	    salario = valorHora * horas;
-
-	    System.out.println("NUMBER = " + numero);
-	    System.out.printf("SALARY = U$ %.2f%n", salario);
-		
 		sc.close();
+		
+		System.out.printf("Valor a pagar: %.2f%n", numPecas1 * vlrPorPecas1 + numPecas2 * vlrPorPecas2);
 	}
 }
