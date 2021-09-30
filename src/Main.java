@@ -8,16 +8,21 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		int codPeca1 = sc.nextInt();
-		int numPecas1 = sc.nextInt();
-		double vlrPorPecas1 = sc.nextDouble();
+		int cod1, cod2, qte1, qte2;
+	    double preco1, preco2, total;
 
-		int codPeca2 = sc.nextInt();
-		int numPecas2 = sc.nextInt();
-		double vlrPorPecas2 = sc.nextDouble();
+	    cod1 = sc.nextInt();
+	    qte1 = sc.nextInt();
+	    preco1 = sc.nextDouble();
+	    
+	    cod2 = sc.nextInt();
+	    qte2 = sc.nextInt();
+	    preco2 = sc.nextDouble();
 
-		sc.close();
+	    total = preco1 * qte1 + preco2 * qte2;
+
+	    System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
 		
-		System.out.printf("Valor a pagar: %.2f%n", numPecas1 * vlrPorPecas1 + numPecas2 * vlrPorPecas2);
+		sc.close();
 	}
 }
