@@ -7,24 +7,25 @@ public class Main {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		//entrada
-		double A = sc.nextDouble();
-		double B = sc.nextDouble();
-		double C = sc.nextDouble();		
+		
+		double A, B, C, triangulo, circulo, trapezio, quadrado, retangulo;
+		
+		A = sc.nextDouble();
+		B = sc.nextDouble();
+		C = sc.nextDouble();
+		
+		triangulo = A * C / 2.0;
+		circulo = 3.14159 * C * C;
+		trapezio = (A + B) / 2.0 * C;
+		quadrado = B * B;
+		retangulo = A * B;
+		
+		System.out.printf("TRIANGULO: %.3f%n", triangulo);
+		System.out.printf("CIRCULO: %.3f%n", circulo);
+		System.out.printf("TRAPEZIO: %.3f%n", trapezio);
+		System.out.printf("QUADRADO: %.3f%n", quadrado);
+		System.out.printf("RETANGULO: %.3f%n", retangulo);
+		
 		sc.close();
-		
-		//processamento
-		double triangulo = (A * C) / 2;
-		double circulo = (C * C) * Math.PI;
-		double trapezio = ((A + B) * C) /2;
-		double quadrado = B * B;
-		double retangulo = A * B;
-		
-		//saida
-		System.out.printf("Triangulo: %.3f%n",triangulo);
-		System.out.printf("Circulo: %.3f%n",circulo);
-		System.out.printf("Trapezio: %.3f%n",trapezio);
-		System.out.printf("Quadrado: %.3f%n",quadrado);
-		System.out.printf("Retangulo: %.3f%n",retangulo);
 	}
 }
