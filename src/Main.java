@@ -7,22 +7,24 @@ public class Main {
 
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-
-		int cod1, cod2, qte1, qte2;
-	    double preco1, preco2, total;
-
-	    cod1 = sc.nextInt();
-	    qte1 = sc.nextInt();
-	    preco1 = sc.nextDouble();
-	    
-	    cod2 = sc.nextInt();
-	    qte2 = sc.nextInt();
-	    preco2 = sc.nextDouble();
-
-	    total = preco1 * qte1 + preco2 * qte2;
-
-	    System.out.printf("VALOR A PAGAR: R$ %.2f%n", total);
-		
+		//entrada
+		double A = sc.nextDouble();
+		double B = sc.nextDouble();
+		double C = sc.nextDouble();		
 		sc.close();
+		
+		//processamento
+		double triangulo = (A * C) / 2;
+		double circulo = (C * C) * Math.PI;
+		double trapezio = ((A + B) * C) /2;
+		double quadrado = B * B;
+		double retangulo = A * B;
+		
+		//saida
+		System.out.printf("Triangulo: %.3f%n",triangulo);
+		System.out.printf("Circulo: %.3f%n",circulo);
+		System.out.printf("Trapezio: %.3f%n",trapezio);
+		System.out.printf("Quadrado: %.3f%n",quadrado);
+		System.out.printf("Retangulo: %.3f%n",retangulo);
 	}
 }
